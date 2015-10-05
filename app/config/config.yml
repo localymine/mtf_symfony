@@ -9,16 +9,16 @@ parameters:
     locale: en
 
 framework:
-    session:
-        handler_id: session.handler.pdo
-    services:
-        session.handler.pdo:
-            class:
-                Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler
-            public: false
-            arguments:
-                - "mysql:dbname=mtf"
-                - { db_table: sessions, db_username: root, db_password: }
+#    session:
+#        handler_id: session.handler.pdo
+#    services:
+#        session.handler.pdo:
+#            class:
+#                Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler
+#            public: false
+#            arguments:
+#                - "mysql:dbname=mtf"
+#                - { db_table: sessions, db_username: root, db_password: }
     #esi:             ~
     #translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"

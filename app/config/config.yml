@@ -88,3 +88,11 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+# EkinoWordpressBundle
+ekino_wordpress:
+    table_prefix: wp_
+    wordpress_directory: %kernel.root_dir%/../web/wordpress
+    load_twig_extension: true # If you want to enable native WordPress functions (ie : get_option() => wp_get_option())
+    security:
+        firewall_name: secured_area
+        login_url: "/wp-login.php"

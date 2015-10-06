@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e87dce5fdef0f01932b9a2a39fe09dc5",
-    "content-hash": "97a65ddfd75e56eb06298c9192afa45f",
+    "hash": "d36198394d7331b9659f46653ff24054",
+    "content-hash": "7caf6fef1460888ceb0dbae992b1c531",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -768,6 +768,107 @@
                 "orm"
             ],
             "time": "2015-08-31 12:59:39"
+        },
+        {
+            "name": "ekino/wordpress-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ekino/EkinoWordpressBundle.git",
+                "reference": "be7fe0503c8dd78a61291005ed1b3bfa656d5157"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ekino/EkinoWordpressBundle/zipball/be7fe0503c8dd78a61291005ed1b3bfa656d5157",
+                "reference": "be7fe0503c8dd78a61291005ed1b3bfa656d5157",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-bundle": ">=1.0",
+                "doctrine/orm": ">=2.2",
+                "hautelook/phpass": "0.3",
+                "php": ">=5.3.9",
+                "symfony/framework-bundle": ">=2.6",
+                "symfony/monolog-bundle": ">=2.2",
+                "symfony/security-bundle": ">=2.6"
+            },
+            "suggest": {
+                "twig/twig": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ekino\\WordpressBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Composieux",
+                    "email": "composieux@ekino.com"
+                }
+            ],
+            "description": "A Symfony bundle to link Symfony with Wordpress",
+            "homepage": "http://github.com/ekino/EkinoWordpressBundle",
+            "keywords": [
+                "bundle",
+                "ekino",
+                "symfony",
+                "wordpress"
+            ],
+            "time": "2015-09-06 20:30:21"
+        },
+        {
+            "name": "hautelook/phpass",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hautelook/phpass.git",
+                "reference": "da4c2c693aa4e1c616a350015c90af0da82a0fd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hautelook/phpass/zipball/da4c2c693aa4e1c616a350015c90af0da82a0fd8",
+                "reference": "da4c2c693aa4e1c616a350015c90af0da82a0fd8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Hautelook": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Public Domain"
+            ],
+            "authors": [
+                {
+                    "name": "Solar Designer",
+                    "email": "solar@openwall.com",
+                    "homepage": "http://openwall.com/phpass/"
+                }
+            ],
+            "description": "Portable PHP password hashing framework",
+            "homepage": "http://github.com/hautelook/phpass/",
+            "keywords": [
+                "blowfish",
+                "crypt",
+                "password",
+                "security"
+            ],
+            "time": "2012-08-31 00:00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1694,19 +1795,15 @@
             "time": "2015-03-17 06:36:52"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "ekino/wordpress-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.9"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }

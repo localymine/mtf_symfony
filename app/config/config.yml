@@ -96,3 +96,23 @@ ekino_wordpress:
     security:
         firewall_name: secured_area
         login_url: "/wp-login.php"
+liip_theme:
+    themes: ['standardTheme', 'winter_theme', 'weekend']
+    active_theme: 'standardTheme'
+    # Device specific themes/templates
+#    autodetect_theme: true
+#    path_patterns:
+#        app_resource:
+#            - %%app_path%%/themes/%%current_theme%%/%%current_device%%/%%template%%
+#            - %%app_path%%/themes/fallback_theme/%%current_device%%/%%template%%
+#            - %%app_path%%/views/%%current_device%%/%%template%%
+    # Get active theme information from cookie
+#    cookie:
+#        name: NameOfTheCookie
+#        lifetime: 31536000 # 1 year in seconds
+#        path: /
+#        domain: ~
+#        secure: false
+#        http_only: false
+    # Disable controller based theme switching
+    load_controllers: false

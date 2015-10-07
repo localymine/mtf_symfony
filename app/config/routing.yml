@@ -3,3 +3,6 @@ app:
     type:     annotation
 ekino_wordpress:
     resource: "@EkinoWordpressBundle/Resources/config/routing.xml"
+liip_theme:
+    resource: "@LiipThemeBundle/Resources/config/routing.xml"
+    prefix: /theme

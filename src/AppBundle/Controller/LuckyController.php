@@ -43,6 +43,13 @@ class LuckyController extends Controller {
 //        
 //        return new Response($html);
 
+        $activeTheme = $this->container->get('liip_theme.active_theme');
+        echo $activeTheme->getName();
+        $activeTheme->setName("standard");
+        echo $activeTheme->getName();
+
+//        return $this->render('AcmeDemoBundle:lucky:number.html.twig', array('luckyNumberList' => $numbersList));
+
         return $this->render(
                         'lucky/number.html.twig', array('luckyNumberList' => $numbersList)
         );

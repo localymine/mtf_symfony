@@ -48,11 +48,11 @@ class LuckyController extends Controller {
         $activeTheme->setName("standard");
         echo $activeTheme->getName();
 
-//        return $this->render('AcmeDemoBundle:lucky:number.html.twig', array('luckyNumberList' => $numbersList));
+        return $this->render('AppBundle:lucky:number.html.twig', array('luckyNumberList' => $numbersList));
 
-        return $this->render(
-                        'lucky/number.html.twig', array('luckyNumberList' => $numbersList)
-        );
+//        return $this->render(
+//                        'lucky/number.html.twig', array('luckyNumberList' => $numbersList)
+//        );
     }
 
     /**
